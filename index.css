@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace, sans-serif;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+    font-size: 62.5%;
+}
+
+.calculator {
+    margin: 3rem auto;
+    display: grid;
+    place-items: center;
+}
+
+.display{
+    background-color:rgba(255, 255, 255, 0.9);
+    border: solid 0.01rem rgb(192, 192, 192);
+    width: 30rem;
+    padding: 1.7rem 2.2rem;
+    border-radius: 1rem 1rem 0 0;
+    font-size: larger;
+}
+
+.result{
+    border: solid 0.01rem rgb(185, 185, 185);
+    padding: 1rem;
+    background-color: rgb(221, 212, 87);
+    box-shadow: inset 1px 1px 5px rgb(146, 146, 146);
+    border-radius: 0.3rem;
+}
+
+.result p {
+    color: rgb(76, 76, 76);
+}
+
+.buttons{
+    width: 30rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-content: space-between;
+    padding: 0.7rem;
+    border: solid 0.01rem rgb(185, 185, 185);
+    border-top: solid 0.01rem rgba(255, 255, 255, 0.9);
+    border-radius: 0 0 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+button{
+    margin: 0.5rem;
+    color: white;
+    font-size: large;
+    background-color: rgb(31, 31, 31);
+    padding: 0.9rem;
+    border: solid 0.01rem rgb(31, 31, 31);
+    border-radius: 1rem;
+    box-shadow: 1.5px 1.5px 5px gray;
+    text-align: center;
+}
+
+@keyframes bounce{30%{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-5px);
+}}
+
+button:hover{
+    background-color:rgb(237, 147, 57);
+    border: solid 0.01rem rgb(237, 147, 57);
+    animation: bounce 0.5s;
+}
+
+.start {
+    background-color:rgb(50, 166, 40);
+    border: solid 0.01rem rgb(50, 166, 40);
+}
+
+.start:hover{
+    background-color:rgb(50, 166, 40);
+    border: solid 0.01rem rgb(50, 166, 40);
+}
+
+.equal{
+    margin: 0.5rem;
+    color: white;
+    background-color:rgb(201, 27, 27);
+    border: solid 0.01rem rgb(201, 27, 27);
+    font-size: large;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    grid-row: 5/7;
+    grid-column: 6/7;
+}
+
+.equal:hover{
+    background-color:rgb(201, 27, 27);
+    border: solid 0.01rem rgb(201, 27, 27);
+    animation: bounce 1s;
+}
