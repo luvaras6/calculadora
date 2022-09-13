@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(31, 31, 31, 0.9);
     font-size: 62.5%;
 }
 
@@ -26,6 +26,7 @@ body{
     padding: 1.7rem 2.2rem;
     border-radius: 1rem 1rem 0 0;
     font-size: larger;
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.8);
 }
 
 .result{
@@ -51,29 +52,26 @@ body{
     border-top: solid 0.01rem rgba(255, 255, 255, 0.9);
     border-radius: 0 0 1rem 1rem;
     background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
 }
 
 button{
     margin: 0.5rem;
     color: white;
     font-size: large;
-    background-color: rgb(31, 31, 31);
-    padding: 0.9rem;
-    border: solid 0.01rem rgb(31, 31, 31);
-    border-radius: 1rem;
-    box-shadow: 1.5px 1.5px 5px gray;
+    background-color: rgb(31, 31, 31, 0.9);
+    padding: 0.7rem;
+    border: solid 0.01rem rgba(31, 31, 31, 0.9);
+    border-radius: 0.5rem;
+    /* box-shadow: 1.5px 1.5px 5px gray; */
+    box-shadow: inset -1px 0 5px rgba(31, 31, 31, 0.2), inset 0 -1px 5px rgba(31, 31, 31, 0.2), 2px 3px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
+    cursor: pointer;
 }
 
-@keyframes bounce{30%{
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-5px);
-}}
-
 button:hover{
-    background-color:rgb(237, 147, 57);
-    border: solid 0.01rem rgb(237, 147, 57);
-    animation: bounce 0.5s;
+    background-color:rgb(208, 103, 28);
+    border: solid 0.01rem rgb(208, 103, 28);
 }
 
 .start {
@@ -82,8 +80,8 @@ button:hover{
 }
 
 .start:hover{
-    background-color:rgb(50, 166, 40);
-    border: solid 0.01rem rgb(50, 166, 40);
+    background-color:rgb(24, 132, 14);
+    border: solid 0.01rem rgb(24, 132, 14);
 }
 
 .equal{
@@ -99,7 +97,6 @@ button:hover{
 }
 
 .equal:hover{
-    background-color:rgb(201, 27, 27);
-    border: solid 0.01rem rgb(201, 27, 27);
-    animation: bounce 1s;
+    background-color:rgb(158, 10, 10);
+    border: solid 0.01rem rgb(158, 10, 10);
 }
