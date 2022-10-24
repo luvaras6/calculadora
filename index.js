@@ -24,8 +24,10 @@ function calculadora (boton, display) {
         case 'cos':
             cos(display)
             break;
-
         
+        case 'tg':
+            tg(display)
+            break;
 
         default:
             actualizar(display, boton);
@@ -54,4 +56,8 @@ function sin(){
 
 function cos(){
     display.textContent = Math.cos(display.textContent)
+}
+
+function tg(){
+    display.textContent = Math.tan(display.textContent)
 }
